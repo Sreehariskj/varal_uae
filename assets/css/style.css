@@ -135,7 +135,7 @@ nav .menu ul li button:hover {
 }
 /* ----/ responsive Search Box /---- */
 
-@media (min-width: 1200px) {
+@media (min-width: 831px) {
   .search-box {
     text-align: right;
   }
