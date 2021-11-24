@@ -19,6 +19,11 @@ button {
   border: none;
   outline: none;
 }
+/* ------ Global values ----- */
+.blue {
+  color: dodgerblue;
+}
+
 /* ------------ /  # Navbar  / -------------- */
 
 nav {
@@ -116,30 +121,46 @@ nav .menu ul li button:hover {
   }
 }
 /* ------------ /  # Search Box  / -------------- */
-.search-box {
-  margin: 2em 0;
+.search-field {
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+}
+.search-field .ellipse {
+  flex: 1;
+}
+.search-field .ellipse-2 {
+  align-self: flex-end;
 }
 
+.search-box {
+  width: 300px;
+  padding-left: 10px;
+  align-self: center;
+  height: 8vh;
+  border: 2px solid dodgerblue;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
 .search-box input {
   width: 100%;
-  height: 7vh;
-  border: 2px solid dodgerblue;
-  border-radius: 5px;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 700;
-  letter-spacing: 2px;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  padding-left: 1em;
 }
 .search-box input::placeholder {
   color: dodgerblue;
-  padding-left: 10px;
 }
 /* ----/ responsive Search Box /---- */
 
-@media (min-width: 831px) {
-  .search-box {
-    text-align: right;
+@media (max-width: 830px) {
+  .search-field .ellipse {
+    display: none;
   }
-  .search-box input {
-    width: 300px;
+  .search-field .search-box {
+    width: 100%;
   }
 }
