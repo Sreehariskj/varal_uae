@@ -126,13 +126,12 @@ nav .menu ul li button:hover {
   display: flex;
   justify-content: space-between;
 }
-.search-field .ellipse {
-  flex: 1;
+.search-field .ellipse-1 {
+  align-self: center;
 }
-.search-field .ellipse-2 {
-  align-self: flex-end;
-}
-
+/* .search-field .ellipse {
+   flex: 1; 
+} */
 .search-box {
   width: 300px;
   padding-left: 10px;
