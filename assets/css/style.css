@@ -183,14 +183,14 @@ nav .menu ul li button:hover {
 .intro-content .ellipse-4 {
   grid-area: ellipse-4;
 }
-.intro-content .main-title {
-  grid-area: main-title;
+.intro-content .intro-title {
+  grid-area: intro-title;
 }
-.intro-content .main-title a {
+.intro-content .intro-title a {
   font-weight: 700;
   font-size: 1.5rem;
 }
-.intro-content .main-title h1 {
+.intro-content .intro-title h1 {
   font-weight: 700;
   font-size: 2.3rem;
 }
@@ -257,7 +257,7 @@ nav .menu ul li button:hover {
     grid-template-rows: 50px 4fr 4fr 2fr 10vh;
     grid-template-areas:
       "ellipse-4 ellipse-3"
-      "main-title intro-img"
+      "intro-title intro-img"
       "sub-title intro-img"
       "btn-box intro-img"
       "video-link video-link";
