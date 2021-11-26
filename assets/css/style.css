@@ -19,6 +19,10 @@ button {
   border: none;
   outline: none;
 }
+span{
+  text-decoration: underline solid orange 5px;
+
+}
 /* ------ Global values ----- */
 :root{
   --main-color : dodgerblue;
@@ -89,7 +93,7 @@ nav .menu ul li button:hover {
 
 /* ----/ responsive navbar /---- */
 
-@media (max-width: 830px) {
+@media (max-width: 900px) {
   nav .menu label {
     display: block;
   }
@@ -161,7 +165,7 @@ nav .menu ul li button:hover {
 }
 /* ----/ responsive Search Box /---- */
 
-@media (max-width: 830px) {
+@media (max-width: 900px) {
   .search-field .ellipse {
     display: none;
   }
@@ -244,9 +248,9 @@ nav .menu ul li button:hover {
   height: 40px;
 }
 /* ----/ Responsive Home Section /---- */
-@media (min-width: 831px) {
+@media (min-width: 901px) {
   .intro-content {
-    height: 100vh;
+    height: 80vh;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -262,4 +266,142 @@ nav .menu ul li button:hover {
     flex-direction: row;
     justify-content: center;
   }
+}
+/* ------------ /  # Service Section  / -------------- */
+.service-content .s-title{
+  margin: 60px 0;
+  text-align: center;
+}
+.service-content .s-title .s-description p{
+  padding: 10px;
+   width: 80vw;
+   margin: auto;
+}
+.service-content .company .company-box{
+  text-align: center;
+  margin: 40px 0;
+} 
+.service-content .company .company-box .company-icon img{
+   height: 40px;
+}
+.service-content .company .company-box .company-title{
+  padding: 15px 0;
+}
+.service-content .company .company-box .company-description p{
+   width: 80%;
+   margin: auto;
+}
+.service-content .company .company-box .company-link a{
+          line-height: 50px;
+          font-size: 21px;
+          color: orange;
+}
+/* grid setup for mobile view (some issues) */
+/* .service-content .services{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 4fr 4fr 4fr 4fr 1fr;
+  grid-template-areas: "guide"
+                       "service-1"
+                       "service-2"
+                       "service-3"
+                       "service-4"
+                       "more-s";
+} */
+.service-content .services .guide {
+  grid-area: guide;
+  text-align: center;
+}
+.service-content .services .guide p{
+  font-size: 1.3em;
+  padding: 5px 0;
+}
+.service-content .services .s-box{
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 2em;
+  margin: 2em 0;
+}
+.service-content .services .s-box .service-description{
+  padding: 1em 0;
+  width: 89%;
+}
+.service-content .services .service-link{
+  padding: 1em 0;
+  display: flex;
+  align-items: center;
+}
+.service-content .services .service-link img{
+  padding: 5px;
+}
+.service-content .services .service-2 .ellipse-5{
+  display: none;
+  width: 150px;
+  text-align: end;
+  height: 150px;
+  background: url(../img/Ellipse\ 7.png) no-repeat;
+}
+.service-content .services .service-1{
+  grid-area: service-1;
+}
+.service-content .services .service-2{
+  grid-area: service-2;
+}
+.service-content .services .service-3{
+  grid-area: service-3;
+}
+.service-content .services .service-4{
+  grid-area: service-4;
+}
+
+.service-content .services .more-s{
+  grid-area: more-s;
+  font-size: 20px;
+  width: 90%;
+  margin: auto;
+}
+.service-content .services .service-box .service-link{
+  /* justify-content: center; */
+  padding: .5em 0;
+}
+.ellipse-6,.ellipse-7{
+  display: none;
+}
+
+/* -----/ Responsive Service Section */
+@media (min-width:901px){
+  .service-content .company {
+    display: flex;
+    justify-content: space-between;
+  }
+    .service-content .company .company-box{         
+          width: 30%;
+          text-align: start;
+    }
+    .service-content .company .company-box .company-description p{
+      margin: unset;
+    }
+    
+    .service-content .services .ellipse-6{
+  grid-area: ellipse-6;
+  text-align: center;
+  display: block;
+}
+.service-content .services .ellipse-7{
+  grid-area: ellipse-7;
+  display: block;
+  text-align: end;
+}
+    .service-content .services{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 150px 2fr 100px  100px 2fr 150px;
+      column-gap: 20px;
+      grid-template-areas: "guide service-1"
+                           "service-2 service-1"
+                           "service-2 ellipse-7"
+                           "ellipse-6 service-3"
+                           "service-4 service-3"
+                           "service-4 more-s ";
+    }
 }
