@@ -4,4 +4,4 @@
 ##### repository link : https://github.com/Sreehariskj/varal_uae/
 
 => Future Updates
-* Price card Slider in mobile view 
+* Slider for Price Card in mobile view 
