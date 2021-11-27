@@ -8,7 +8,7 @@
 }
 .container {
   margin: 0 auto;
-  padding: 0 2em;
+  padding: 0 3em;
   /* max-width: 1100px; */
 }
 a {
@@ -44,7 +44,6 @@ nav {
   /* height: 12vh; */
   background-color: #fff;
   font-family: "Lexend Deca", sans-serif;
-
 }
 
 nav .navbar {
@@ -180,7 +179,7 @@ nav .menu ul li button:hover {
   }
 }
 /* ------------ /  # Home Section  / -------------- */
-.intro-content{
+.intro-content {
   margin: 5rem 0;
 }
 .intro-content .ellipse {
