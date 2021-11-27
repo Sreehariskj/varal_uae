@@ -21,7 +21,6 @@ button {
 }
 span{
   text-decoration: underline solid orange 5px;
-
 }
 /* ------ Global values ----- */
 :root{
@@ -268,11 +267,11 @@ nav .menu ul li button:hover {
   }
 }
 /* ------------ /  # Service Section  / -------------- */
-.service-content .s-title{
+ .main-title{
   margin: 60px 0;
   text-align: center;
 }
-.service-content .s-title .s-description p{
+.service-content .main-title .s-description p{
   padding: 10px;
    width: 80vw;
    margin: auto;
@@ -404,4 +403,70 @@ nav .menu ul li button:hover {
                            "service-4 service-3"
                            "service-4 more-s ";
     }
+}
+/* ------------ /  # Pricing Section  / -------------- */
+.pricing-content {
+  margin: 3rem 0;
+}
+.pricing-content .main-title h1{
+  /* background-color: red; */
+  text-align: center;
+  line-break: 120px;
+  margin: auto;
+}
+.pricing-content .price-card{
+  margin: 4rem 1rem;
+ display: flex;
+ justify-content: space-between;
+}
+.pricing-content .price-card .card{
+  color: var(--main-color);
+  padding: 3em;
+}
+.pricing-content .price-card .card-2{
+  background-color: var(--main-color);
+  color: #fff;
+}
+.pricing-content .price-card .card .card-rate{
+  display: flex;
+  align-items: flex-end;
+}
+.pricing-content .price-card .card .card-rate p{
+  padding-left: 5px;
+}
+.pricing-content .price-card .card .card-subtitle{
+  padding: 10px 0;
+  font-size: 1.3em;
+}
+.pricing-content .price-card .card .card-key{
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+.pricing-content .price-card .card .card-key p{
+  margin-left: 5px;
+}
+.pricing-content .price-card .card .card-btn button{
+  width: 70%;
+  height: 50px;
+  background: white;
+  border: 2px solid var(--main-color);
+  border-radius: 5px;
+  color: var(--main-color);
+  font-size: 1.1rem;
+}
+/* -----/ Responsive Pricing Section /----- */
+@media (max-width:900px){
+  /* .pricing-content .price-card .card-2{
+    flex: 2;
+  }
+  .pricing-content .price-card .card{
+    width: 100%;
+    height: 700px;
+
+  } */
+  .pricing-content .price-card{
+    /* overflow-x: scroll; */
+    display: block;
+  }
 }
