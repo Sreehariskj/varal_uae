@@ -518,8 +518,10 @@ nav .menu ul li button:hover {
 }
 .about-content .contacts .social-media {
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
+}
+.about-content .contacts .social-media .media-link {
+  padding-left: 1em;
 }
 /* -----/ Responsive Contact /----- */
 @media (min-width: 901px) {
@@ -533,4 +535,9 @@ nav .menu ul li button:hover {
   .about-content .about-left {
     margin: 0 5em;
   }
+}
+/* ------------ /  # Footer Section  / -------------- */
+footer .copy-right {
+  margin: 20px 0;
+  text-align: center;
 }
