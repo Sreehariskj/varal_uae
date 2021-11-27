@@ -19,12 +19,12 @@ button {
   border: none;
   outline: none;
 }
-span{
+span {
   text-decoration: underline solid orange 5px;
 }
 /* ------ Global values ----- */
-:root{
-  --main-color : dodgerblue;
+:root {
+  --main-color: dodgerblue;
 }
 .blue {
   color: var(--main-color);
@@ -267,33 +267,34 @@ nav .menu ul li button:hover {
   }
 }
 /* ------------ /  # Service Section  / -------------- */
- .main-title{
+
+.main-title {
   margin: 60px 0;
   text-align: center;
 }
-.service-content .main-title .s-description p{
+.service-content .main-title .s-description p {
   padding: 10px;
-   width: 80vw;
-   margin: auto;
+  width: 80vw;
+  margin: auto;
 }
-.service-content .company .company-box{
+.service-content .company .company-box {
   text-align: center;
   margin: 40px 0;
-} 
-.service-content .company .company-box .company-icon img{
-   height: 40px;
 }
-.service-content .company .company-box .company-title{
+.service-content .company .company-box .company-icon img {
+  height: 40px;
+}
+.service-content .company .company-box .company-title {
   padding: 15px 0;
 }
-.service-content .company .company-box .company-description p{
-   width: 80%;
-   margin: auto;
+.service-content .company .company-box .company-description p {
+  width: 80%;
+  margin: auto;
 }
-.service-content .company .company-box .company-link a{
-          line-height: 50px;
-          font-size: 21px;
-          color: orange;
+.service-content .company .company-box .company-link a {
+  line-height: 50px;
+  font-size: 21px;
+  color: orange;
 }
 /* grid setup for mobile view (some issues) */
 /* .service-content .services{
@@ -311,142 +312,144 @@ nav .menu ul li button:hover {
   grid-area: guide;
   text-align: center;
 }
-.service-content .services .guide p{
+.service-content .services .guide p {
   font-size: 1.3em;
   padding: 5px 0;
 }
-.service-content .services .s-box{
+.service-content .services .s-box {
   border: 1px solid grey;
   border-radius: 5px;
   padding: 2em;
   margin: 2em 0;
 }
-.service-content .services .s-box .service-description{
+.service-content .services .s-box .service-description {
   padding: 1em 0;
   width: 89%;
 }
-.service-content .services .service-link{
+.service-content .services .service-link {
   padding: 1em 0;
   display: flex;
   align-items: center;
 }
-.service-content .services .service-link img{
+.service-content .services .service-link img {
   padding: 5px;
 }
-.service-content .services .service-2 .ellipse-5{
+.service-content .services .service-2 .ellipse-5 {
   display: none;
   width: 150px;
   text-align: end;
   height: 150px;
   background: url(../img/Ellipse\ 7.png) no-repeat;
 }
-.service-content .services .service-1{
+.service-content .services .service-1 {
   grid-area: service-1;
 }
-.service-content .services .service-2{
+.service-content .services .service-2 {
   grid-area: service-2;
 }
-.service-content .services .service-3{
+.service-content .services .service-3 {
   grid-area: service-3;
 }
-.service-content .services .service-4{
+.service-content .services .service-4 {
   grid-area: service-4;
 }
 
-.service-content .services .more-s{
+.service-content .services .more-s {
   grid-area: more-s;
   font-size: 20px;
   width: 90%;
   margin: auto;
 }
-.service-content .services .service-box .service-link{
+.service-content .services .service-box .service-link {
   /* justify-content: center; */
-  padding: .5em 0;
+  padding: 0.5em 0;
 }
-.ellipse-6,.ellipse-7{
+.ellipse-6,
+.ellipse-7 {
   display: none;
 }
 
 /* -----/ Responsive Service Section */
-@media (min-width:901px){
+@media (min-width: 901px) {
   .service-content .company {
     display: flex;
     justify-content: space-between;
   }
-    .service-content .company .company-box{         
-          width: 30%;
-          text-align: start;
-    }
-    .service-content .company .company-box .company-description p{
-      margin: unset;
-    }
-    
-    .service-content .services .ellipse-6{
-  grid-area: ellipse-6;
-  text-align: center;
-  display: block;
-}
-.service-content .services .ellipse-7{
-  grid-area: ellipse-7;
-  display: block;
-  text-align: end;
-}
-    .service-content .services{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 150px 2fr 100px  100px 2fr 150px;
-      column-gap: 20px;
-      grid-template-areas: "guide service-1"
-                           "service-2 service-1"
-                           "service-2 ellipse-7"
-                           "ellipse-6 service-3"
-                           "service-4 service-3"
-                           "service-4 more-s ";
-    }
+  .service-content .company .company-box {
+    width: 30%;
+    text-align: start;
+  }
+  .service-content .company .company-box .company-description p {
+    margin: unset;
+  }
+
+  .service-content .services .ellipse-6 {
+    grid-area: ellipse-6;
+    text-align: center;
+    display: block;
+  }
+  .service-content .services .ellipse-7 {
+    grid-area: ellipse-7;
+    display: block;
+    text-align: end;
+  }
+  .service-content .services {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 2fr 100px 100px 2fr 150px;
+    column-gap: 20px;
+    grid-template-areas:
+      "guide service-1"
+      "service-2 service-1"
+      "service-2 ellipse-7"
+      "ellipse-6 service-3"
+      "service-4 service-3"
+      "service-4 more-s ";
+  }
 }
 /* ------------ /  # Pricing Section  / -------------- */
 .pricing-content {
   margin: 3rem 0;
 }
-.pricing-content .main-title h1{
+.pricing-content .main-title h1 {
   /* background-color: red; */
   text-align: center;
   line-break: 120px;
   margin: auto;
 }
-.pricing-content .price-card{
+.pricing-content .price-card {
   margin: 4rem 1rem;
- display: flex;
- justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
-.pricing-content .price-card .card{
+.pricing-content .price-card .card {
   color: var(--main-color);
   padding: 3em;
 }
-.pricing-content .price-card .card-2{
+.pricing-content .price-card .card-2 {
   background-color: var(--main-color);
   color: #fff;
 }
-.pricing-content .price-card .card .card-rate{
+.pricing-content .price-card .card .card-rate {
   display: flex;
   align-items: flex-end;
 }
-.pricing-content .price-card .card .card-rate p{
+.pricing-content .price-card .card .card-rate p {
   padding-left: 5px;
 }
-.pricing-content .price-card .card .card-subtitle{
+.pricing-content .price-card .card .card-subtitle {
   padding: 10px 0;
   font-size: 1.3em;
 }
-.pricing-content .price-card .card .card-key{
+.pricing-content .price-card .card .card-key {
   margin: 10px 0;
   display: flex;
   align-items: center;
 }
-.pricing-content .price-card .card .card-key p{
+.pricing-content .price-card .card .card-key p {
   margin-left: 5px;
 }
-.pricing-content .price-card .card .card-btn button{
+.pricing-content .price-card .card .card-btn button {
   width: 70%;
   height: 50px;
   background: white;
@@ -456,7 +459,7 @@ nav .menu ul li button:hover {
   font-size: 1.1rem;
 }
 /* -----/ Responsive Pricing Section /----- */
-@media (max-width:900px){
+@media (max-width: 900px) {
   /* .pricing-content .price-card .card-2{
     flex: 2;
   }
@@ -465,8 +468,69 @@ nav .menu ul li button:hover {
     height: 700px;
 
   } */
-  .pricing-content .price-card{
+  .pricing-content .price-card {
     /* overflow-x: scroll; */
     display: block;
+  }
+}
+/* ------------ /  # About Section  / -------------- */
+.about-content .vertical-line {
+  border-left: 7px solid var(--main-color);
+  height: 100%;
+  padding-left: 5px;
+}
+
+.about-content .box-a {
+  margin: 2em;
+}
+.about-content .box-a .card-a {
+  margin: 1em 0;
+  display: flex;
+  align-items: center;
+}
+.about-content .box-a .card-a .a-img {
+  border: 2px solid var(--main-color);
+  padding: 1em;
+}
+.about-content .box-a .card-a .a-details {
+  padding-left: 20px;
+}
+.about-content .review-box .review-card .review-img {
+  border-radius: 50%;
+}
+.about-content .contacts .contact-box {
+  display: flex;
+}
+.about-content .contacts .contact-box .contact-card {
+  margin: 1em;
+}
+.about-content .contacts .contact-box .contact-card .contact-info a {
+  display: block;
+  color: grey;
+}
+#sub-card .contact-info {
+  margin: 1em 0;
+  height: 6vh;
+  display: flex;
+}
+#sub-card .contact-info input {
+  padding: 0 1em;
+}
+.about-content .contacts .social-media {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+/* -----/ Responsive Contact /----- */
+@media (min-width: 901px) {
+  .about-content .contacts .contact-box {
+    display: block;
+  }
+  .about-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  .about-content .about-left {
+    margin: 0 5em;
   }
 }
