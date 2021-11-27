@@ -36,9 +36,15 @@ span {
 /* ------------ /  # Navbar  / -------------- */
 
 nav {
-  height: 12vh;
+  /* margin: 1em 0; */
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  /* height: 12vh; */
   background-color: #fff;
   font-family: "Lexend Deca", sans-serif;
+
 }
 
 nav .navbar {
@@ -131,6 +137,7 @@ nav .menu ul li button:hover {
 }
 /* ------------ /  # Search Box  / -------------- */
 .search-field {
+  margin: 5rem 0;
   height: 15vh;
   display: flex;
   justify-content: space-between;
@@ -173,6 +180,9 @@ nav .menu ul li button:hover {
   }
 }
 /* ------------ /  # Home Section  / -------------- */
+.intro-content{
+  margin: 5rem 0;
+}
 .intro-content .ellipse {
   text-align: center;
 }
